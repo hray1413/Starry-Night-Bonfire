@@ -4,6 +4,63 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>星夜篝火 | Minecraft 伺服器</title>
+  <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星夜篝火 | Minecraft 伺服器</title>
+    <style>
+        /* 添加左侧Logo的样式 */
+        .left-logo {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            width: 80px;
+            height: 80px;
+            z-index: 1000;
+        }
+        
+        .left-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .left-logo img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* 确保内容不会与Logo重叠 */
+        .wrap {
+            margin-left: 100px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .left-logo {
+                position: relative;
+                left: 0;
+                top: 0;
+                margin: 0 auto 20px;
+                display: block;
+            }
+            
+            .wrap {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 左侧Logo -->
+    <div class="left-logo">
+        <img src="logo.png" alt="星夜篝火 Logo">
+    </div>
+    
   <meta name="description" content="星夜篝火 — 一個溫馨的 Minecraft 生存/社群伺服器，建造、探險、合作與每晚的篝火聚會。伺服器 IP：agency-bathroom.gl.joinmc.link" />
   <style>
     :root{

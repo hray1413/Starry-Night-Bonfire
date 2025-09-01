@@ -325,8 +325,11 @@
                     <img src="logo.png" alt="星夜篝火 Logo">
                 </div>
                 <div>
-                    <h1>星夜篝火 <span style="font-size:14px;color:var(--muted)">— Minecraft 伺服器</span></h1>
-                    <p class="lead">溫馨生存、社群建設。</p>
+                    <h1>
+                        <span data-translate="main_title">星夜篝火</span> 
+                        <span style="font-size:14px;color:var(--muted)" data-translate="subtitle">— Minecraft 伺服器</span>
+                    </h1>
+                    <p class="lead" data-translate="tagline">溫馨生存、社群建設。</p>
                 </div>
             </div>
             
@@ -445,6 +448,9 @@
         // 语言文件
         const translations = {
             'zh': {
+                'main_title': '星夜篝火',
+                'subtitle': '— Minecraft 伺服器',
+                'tagline': '溫馨生存、社群建設。',
                 'welcome_title': '歡迎來到 星夜篝火',
                 'welcome_desc': '我們是一個注重社群與創造的 Minecraft 伺服器。無論你喜歡建造、冒險或是簡單社交，這裡都有你的位置。',
                 'feature_1': '🌲 生存模式（保護/土地系統）',
@@ -487,6 +493,9 @@
                 'footer': '星夜篝火 — Minecraft 伺服器｜保留所有權利'
             },
             'en': {
+                'main_title': 'Starry Campfire',
+                'subtitle': '— Minecraft Server',
+                'tagline': 'Cozy Survival, Community Building.',
                 'welcome_title': 'Welcome to Starry Campfire',
                 'welcome_desc': 'We are a Minecraft server focused on community and creativity. Whether you enjoy building, adventuring, or simply socializing, there\'s a place for you here.',
                 'feature_1': '🌲 Survival Mode (Protection/Land System)',
@@ -551,6 +560,9 @@
                 // 更新按钮文本
                 document.querySelector('.language-button span:first-child').textContent = 
                     lang === 'zh' ? '繁體中文' : 'English';
+                    
+                // 更新页面标题
+                document.title = lang === 'zh' ? '星夜篝火 | Minecraft 伺服器' : 'Starry Campfire | Minecraft Server';
             });
         });
         
